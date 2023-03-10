@@ -24,8 +24,8 @@ public class main {
      */
     private static void exercise2() {
         System.out.println("\nExercise 2:");
-        int myInitial = 'R';
-        double myAge = 25;
+        char myInitial = 'R';
+        into myAge = 25;
         System.out.println("my age ="+ myAge+", my initial= " + myInitial);
     }
 
