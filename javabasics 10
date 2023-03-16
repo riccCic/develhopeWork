@@ -30,14 +30,12 @@ public class main {
         boolean isWarm = temperatureInCelsius >= isWarmTemperatureInCelsius;
         boolean wearingShorts = true;
 
-
         if (isWarm && wearingShorts || temperatureInCelsius <= isWarmTemperatureInCelsius && wearingShorts == false) {
             System.out.println("Comfortable clothes");
         } else {
             System.out.println("Uncomfortable clothes");
         }
     }
-
 
     /**
      * 2: We are going to automate the club bouncer, write a condition with an if statement with the && (and)
@@ -57,13 +55,12 @@ public class main {
         double eurosInPocket = 7.5;
         double eurosForEntry = 10;
 
-        if (shoeType == "fancy" && eurosInPocket >= eurosForEntry && age >= 18) {
+        if (shoeType.equals("fancy") && eurosInPocket >= eurosForEntry && age >= 18) {
             System.out.println("Come in!");
         } else {
             System.out.println("Stay out!");
         }
     }
-
 
     /**
      * 3: Write an if else statement to calculate our grade
@@ -96,6 +93,7 @@ public class main {
         } else {
             if (testScoreInDecimal >= 0.9) {
                 System.out.println("A");
+
             } else if (testScoreInDecimal >= 0.8) {
                 System.out.println("B");
             } else if (testScoreInDecimal >= 0.7) {
@@ -121,11 +119,10 @@ public class main {
         System.out.println("\nExercise 4 (Optional) - One way road:");
         boolean carIsDrivingFromLeftToRight = true;
         boolean carIsDrivingFromRightToLeft = false;
+
         if (carIsDrivingFromRightToLeft ^ carIsDrivingFromRightToLeft) {
             System.out.println("Safe");
         } else System.out.println("CRASH!");
     }
-
-
 }
 
