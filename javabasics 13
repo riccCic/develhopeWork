@@ -39,6 +39,15 @@ public class main {
 
         System.out.println(numbers.get(0));
 
+        ArrayList<Integer> ourNumber = new ArrayList<>();
+        ourNumber.add(1);
+        ourNumber.add(2);
+        ourNumber.add(3);
+
+        for (int i = 0; i < ourNumber.size(); i++) {
+            System.out.println(ourNumber.get(i));
+
+        }
     }
 
     /**
@@ -87,7 +96,7 @@ public class main {
     public static void exercise3() {
         System.out.println("\nExercise 3:");
         int[] items = new int[]{5, 10404, -234348, -53, 9, 91, 92, 34534, 12334, 1435};
-
-        System.out.println(Arrays.stream(items).sum());
+        int sum = items[0] + items[1] + items[2] + items[3] + items[4] + items[5] + items[6] + items[7] + items[8] + items[9];
+        System.out.println("La somma degli arrey è= " + sum);
     }
 }
