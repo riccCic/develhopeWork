@@ -124,14 +124,18 @@ public class main {
      * When a loop in inside a loop, we call this a nested loop
      */
     private static void exercise5() {
-        for (int timesTableNumber = 1; timesTableNumber <= 10; timesTableNumber++) System.out.println(timesTableNumber);
-        for (int timesTableNumber = 2; timesTableNumber <= 20; timesTableNumber += 2) {
-            System.out.println(timesTableNumber);
-        }
+        for (int timesTableNumber = 1; timesTableNumber <= 10; timesTableNumber++)
+            for (int i = 1; i <= 10; i++) {
+                int result = timesTableNumber * i;
+                System.out.println(timesTableNumber + "=" + result);
 
+
+            }
 
     }
 }
+
+
 
 
 
